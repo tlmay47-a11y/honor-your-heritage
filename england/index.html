@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keep the Story Going · Honor Your English Heritage</title>
+<meta name="description" content="A celebration of English heritage: language, food, art, places and the family stories worth keeping. #HonorYourHeritage">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Manrope:wght@400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --oak:#1f3a2e; --moss:#3f5e47; --sage:#a9b79b; --parch:#f1e9d8; --linen:#f8f4ea;
+  --brick:#a8402f; --ochre:#c8933f; --slate:#2e3640; --ink:#1c201d;
+  --disp:'Libre Caslon Display',Georgia,serif; --serif:'Libre Caslon Text',Georgia,serif; --sans:'Manrope',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--linen);color:var(--ink);font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 48px}
+.kicker{font-size:12px;font-weight:600;letter-spacing:.26em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--disp);font-weight:400;line-height:1.02}
+h3{font-family:var(--serif)}
+
+/* top rule */
+.topbar{background:var(--oak);color:var(--parch);font-size:11px;letter-spacing:.28em;text-transform:uppercase;text-align:center;padding:9px 0}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:72px;border-bottom:1px solid #d8cdb6}
+.mark{font-family:var(--serif);font-size:20px;display:flex;align-items:center;gap:10px}
+.mark svg{width:18px;height:18px}
+nav ul{display:flex;gap:30px;list-style:none;font-size:13px;font-weight:500}
+nav a{text-decoration:none}
+
+/* HERO */
+.hero{position:relative;background:var(--parch);overflow:hidden;height:calc(100vh - 102px);min-height:573px;max-height:760px}
+.hero .wrap{position:relative;z-index:2;padding-top:56px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px}
+.hero .kicker{color:var(--brick);display:flex;gap:12px;align-items:center}
+.hero .kicker::before{content:"";width:12px;height:12px;background:
+  linear-gradient(var(--brick),var(--brick)) center/12px 3px no-repeat,
+  linear-gradient(var(--brick),var(--brick)) center/3px 12px no-repeat}
+.hero h1{font-size:clamp(60px,7.6vw,112px);color:var(--oak);margin-top:22px;letter-spacing:-.015em}
+.hero h1 i{font-family:var(--serif);font-style:italic;color:var(--brick);font-size:.86em}
+.hero .lede{max-width:520px;margin-top:22px;font-size:17px;color:#46483f}
+.hero aside{align-self:start;margin-top:24px;border-left:1px solid #cdbf9f;padding-left:28px;font-family:var(--serif);font-style:italic;font-size:19px;color:var(--moss);line-height:1.5}
+.hero aside b{display:block;font-family:var(--sans);font-style:normal;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--ochre);margin-bottom:10px;font-weight:600}
+.pill{display:inline-flex;gap:10px;margin-top:30px;background:var(--oak);color:var(--parch);padding:13px 24px;border-radius:999px;font-size:13px;font-weight:600;letter-spacing:.06em}
+.pill span{color:var(--ochre)}
+.landscape{position:absolute;left:0;right:0;bottom:0;z-index:1;line-height:0}
+.landscape svg{width:100%;height:270px;display:block}
+
+/* INTRO */
+.intro{padding:120px 0 80px}
+.intro .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
+.intro h2{font-size:clamp(42px,4.6vw,66px);color:var(--oak)}
+.intro h2 i{font-family:var(--serif);color:var(--brick)}
+.intro p{font-size:18px;color:#46483f;margin-bottom:18px}
+.intro .kicker{color:var(--moss);margin-bottom:20px}
+
+/* ALMANAC */
+.almanac{padding:20px 0 120px}
+.alm{display:grid;grid-template-columns:repeat(6,1fr);gap:22px}
+.tile{border:1px solid #d8cdb6;background:#fffdf7;padding:34px 30px 36px;grid-column:span 2;position:relative}
+.tile.big{grid-column:span 3}
+.tile .ic{width:56px;height:56px;margin-bottom:22px}
+.tile .k{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--ochre);font-weight:600}
+.tile h3{font-size:30px;color:var(--oak);margin:6px 0 12px}
+.tile p{color:#4f5148;font-size:15.5px}
+.tile.dark{background:var(--oak);border-color:var(--oak)}.tile.dark h3{color:var(--parch)}.tile.dark p{color:rgba(241,233,216,.78)}
+.tile.brick{background:var(--brick);border-color:var(--brick)}.tile.brick h3{color:#fff6ea}.tile.brick p{color:rgba(255,246,234,.85)}.tile.brick .k{color:#f7d9a8}
+.tile .corner{position:absolute;top:18px;right:18px;font-family:var(--serif);font-style:italic;color:#b6a985;font-size:15px}
+
+/* BAND */
+.band{background:var(--oak);color:var(--parch);padding:110px 0;position:relative;overflow:hidden}
+.band .wrap{display:grid;grid-template-columns:auto 1fr;gap:60px;align-items:center}
+.band svg{width:180px;height:180px}
+.band h2{font-size:clamp(40px,4.6vw,64px)}
+.band h2 i{font-family:var(--serif);color:var(--ochre)}
+.band p{margin-top:18px;max-width:620px;opacity:.78;font-size:17px}
+
+/* WAYS */
+.ways{padding:130px 0}
+.ways .head{text-align:center;max-width:760px;margin:0 auto 70px}
+.ways .head .kicker{color:var(--brick)}
+.ways .head h2{font-size:clamp(46px,5.2vw,76px);color:var(--oak);margin-top:16px}
+.ways .head p{margin-top:18px;color:#4f5148;font-size:17px}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:2px solid var(--oak)}
+.step{padding:30px 24px 10px;border-right:1px solid #d8cdb6}
+.step:last-child{border-right:0}
+.step .n{font-family:var(--disp);font-size:64px;color:var(--brick);line-height:1}
+.step h3{font-size:23px;color:var(--oak);margin:14px 0 10px;line-height:1.15}
+.step p{font-size:14.5px;color:#4f5148}
+.step code{font-family:var(--sans);font-weight:600;color:var(--oak);background:var(--parch);padding:1px 6px;border-radius:3px}
+
+/* PROMPTS */
+.prompts{background:var(--parch);padding:110px 0}
+.prompts .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+.prompts h2{font-size:clamp(40px,4.4vw,60px);color:var(--oak)}
+.prompts .kicker{color:var(--moss);margin-bottom:18px}
+.prompts ul{list-style:none}
+.prompts li{font-family:var(--serif);font-size:24px;color:var(--slate);padding:22px 0;border-bottom:1px solid #d3c6a8;display:flex;gap:20px}
+.prompts li::before{content:"?";font-family:var(--disp);color:var(--brick);font-size:28px;line-height:1}
+
+/* CTA */
+.cta{padding:150px 0 130px;text-align:center}
+.cta .kicker{color:var(--brick)}
+.cta h2{font-size:clamp(54px,6.8vw,100px);color:var(--oak);margin:20px auto 0;max-width:1000px}
+.cta h2 i{font-family:var(--serif);color:var(--brick)}
+.cta p{max-width:600px;margin:26px auto 0;font-size:18px;color:#4f5148}
+.btns{margin-top:42px;display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.btn{padding:17px 32px;border-radius:999px;text-decoration:none;font-weight:600;font-size:14px;letter-spacing:.04em}
+.btn.p{background:var(--brick);color:#fff6ea}.btn.s{border:1.5px solid var(--oak);color:var(--oak)}
+footer{background:var(--oak);color:var(--parch);padding:30px 0;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer i{font-family:var(--serif)}
+
+@media (max-width:900px){
+  .wrap{padding:0 24px} nav ul{display:none}
+  .hero{height:auto;max-height:none}
+  .hero .wrap,.intro .wrap,.prompts .wrap,.band .wrap{grid-template-columns:1fr}
+  .hero{padding-bottom:180px}
+  .alm{grid-template-columns:1fr}.tile,.tile.big{grid-column:auto}
+  .steps{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid #d8cdb6}
+  footer .wrap{flex-direction:column;gap:6px}
+}
+.sig{font-family:'Pinyon Script',cursive;font-size:30px;line-height:1;letter-spacing:0}
+.credit{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.credit .by{font-size:11px;letter-spacing:.24em;text-transform:uppercase;opacity:.75}
+.credit .sig{color:var(--parch)}
+.credit small{font-size:12px;opacity:.7}
+.wm{position:absolute;right:30px;bottom:18px;z-index:6;display:flex;align-items:baseline;gap:8px;color:rgba(241,233,216,.85);pointer-events:none}
+.wm .sig{font-size:30px}
+.wm span{font-family:var(--sans);font-size:10px;letter-spacing:.28em;text-transform:uppercase;opacity:.8}
+</style>
+</head>
+<body>
+<div class="topbar">A celebration for every English family · #HonorYourHeritage</div>
+<nav><div class="wrap">
+  <div class="mark"><svg viewBox="0 0 18 18"><rect x="7" y="0" width="4" height="18" fill="#a8402f"/><rect x="0" y="7" width="18" height="4" fill="#a8402f"/></svg>Keep the Story Going</div>
+  <ul><li><a href="#heritage">Heritage</a></li><li><a href="#ways">Five ways</a></li><li><a href="#prompts">Questions</a></li><li><a href="#share">Share</a></li></ul>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kicker">For the people of England</div>
+      <h1>Honour where<br>you <i>come from.</i></h1>
+      <p class="lede">Heritage isn’t kept in glass cases. It’s in the Sunday roast, the old songs, the walk your grandad always took, and the stories nobody has written down yet. Let’s keep them going.</p>
+      <div class="pill">Share yours <span>#HonorYourHeritage</span></div>
+    </div>
+    <aside><b>Begin with a cuppa</b>Put the kettle on, sit with someone older than you, and ask how things used to be.</aside>
+  </div>
+  <div class="landscape" aria-hidden="true">
+    <svg viewBox="0 0 1440 300" preserveAspectRatio="xMaxYMax slice">
+      <path d="M0 250 Q300 235 620 225 Q900 120 1160 110 T1440 120 V300 H0z" fill="#c9cfb3"/>
+      <path d="M0 270 Q360 255 700 240 Q950 170 1200 165 T1440 175 V300 H0z" fill="#a9b79b"/>
+      <g stroke="#7f9273" stroke-width="2" fill="none" opacity=".7"><path d="M760 230 Q860 215 960 230"/><path d="M1150 190 Q1230 205 1320 215"/></g>
+      <g fill="#3f5e47" transform="translate(1270 62)">
+        <rect x="0" y="40" width="70" height="40"/><path d="M-6 42 L35 18 L76 42z"/>
+        <rect x="70" y="20" width="22" height="60"/><path d="M68 22 L81 -26 L94 22z"/>
+        <rect x="78" y="34" width="6" height="10" fill="#c8933f"/>
+      </g>
+      <g transform="translate(760 70)">
+        <rect x="56" y="70" width="12" height="80" fill="#2e3640"/>
+        <circle cx="62" cy="60" r="44" fill="#3f5e47"/><circle cx="28" cy="78" r="30" fill="#3f5e47"/><circle cx="98" cy="76" r="32" fill="#35523d"/><circle cx="62" cy="30" r="30" fill="#4a6b51"/>
+      </g>
+      <path d="M0 285 Q500 270 820 250 Q1100 215 1440 215 V300 H0z" fill="#3f5e47"/>
+      <g transform="translate(960 140)">
+        <g fill="#a8402f"><rect x="0" y="30" width="56" height="50"/><rect x="56" y="30" width="56" height="50" fill="#b85a43"/><rect x="112" y="30" width="56" height="50"/><rect x="168" y="30" width="56" height="50" fill="#b85a43"/></g>
+        <path d="M-6 32 L28 4 L62 32 L84 4 L118 32 L140 4 L174 32 L196 4 L230 32z" fill="#2e3640"/>
+        <g fill="#f1e9d8"><rect x="10" y="44" width="12" height="14"/><rect x="66" y="44" width="12" height="14"/><rect x="122" y="44" width="12" height="14"/><rect x="178" y="44" width="12" height="14"/></g>
+        <g fill="#1f3a2e"><rect x="34" y="56" width="12" height="24"/><rect x="90" y="56" width="12" height="24"/><rect x="146" y="56" width="12" height="24"/><rect x="202" y="56" width="12" height="24"/></g>
+        <g fill="#2e3640"><rect x="20" y="-6" width="8" height="16"/><rect x="132" y="-6" width="8" height="16"/></g>
+      </g>
+      <path d="M0 292 Q600 284 1000 262 Q1250 245 1440 248 V300 H0z" fill="#1f3a2e"/>
+    </svg>
+  </div>
+<div class="wm" aria-hidden="true"><span>Design</span><b class="sig" style="font-weight:400">TLMay</b></div>
+</header>
+
+<section class="intro" id="heritage">
+  <div class="wrap">
+    <div><div class="kicker">What we carry</div><h2>A heritage made of <i>ordinary, extraordinary</i> things.</h2></div>
+    <div>
+      <p>English heritage belongs to everyone who calls England home: families rooted for centuries in a Yorkshire dale, and families who arrived last year and made a street in Leicester or Bristol their own. Every one of those stories adds to the whole.</p>
+      <p>It lives in accents that change every few miles, in recipes scribbled on the back of envelopes, in allotments and seaside towns, and in the people who remember how it all used to be.</p>
+    </div>
+  </div>
+</section>
+
+<section class="almanac">
+  <div class="wrap alm">
+    <article class="tile big dark">
+      <span class="corner">i.</span>
+      <svg class="ic" viewBox="0 0 56 56" fill="none" stroke="#c8933f" stroke-width="1.6"><path d="M8 14h28a6 6 0 0 1 6 6v22H14a6 6 0 0 1-6-6z"/><path d="M42 22h6v24H20"/><path d="M15 23h20M15 30h16"/></svg>
+      <div class="k">Language</div><h3>Words &amp; voices</h3>
+      <p>The language of Chaucer, Shakespeare and the folk song, and also of your nan’s sayings, your town’s slang and the dialect words that make strangers smile. Keep the phrases that sound like home.</p>
+    </article>
+    <article class="tile big">
+      <span class="corner">ii.</span>
+      <svg class="ic" viewBox="0 0 56 56" fill="none" stroke="#a8402f" stroke-width="1.6"><path d="M10 26h30v8a12 12 0 0 1-12 12h-6a12 12 0 0 1-12-12z"/><path d="M40 29h4a4 4 0 0 1 0 8h-5"/><path d="M18 12c-2 4 2 6 0 10M26 10c-2 4 2 6 0 10M34 12c-2 4 2 6 0 10"/></svg>
+      <div class="k">Food</div><h3>The family table</h3>
+      <p>Sunday roasts and Yorkshire puddings, Cornish pasties, a proper pot of tea, the curry night that became a tradition. Food is how families say “you belong here.”</p>
+    </article>
+    <article class="tile">
+      <span class="corner">iii.</span>
+      <svg class="ic" viewBox="0 0 56 56" fill="none" stroke="#3f5e47" stroke-width="1.6"><rect x="8" y="8" width="40" height="32"/><path d="M8 34l12-10 8 6 8-10 12 14"/><path d="M22 40l-4 10M34 40l4 10"/></svg>
+      <div class="k">Art &amp; craft</div><h3>Made by hand</h3>
+      <p>Landscape painting, choirs and brass bands, quilting, pottery, knitting patterns handed down. Creativity in every parlour and pub.</p>
+    </article>
+    <article class="tile brick">
+      <span class="corner" style="color:#f7d9a8">iv.</span>
+      <svg class="ic" viewBox="0 0 56 56" fill="none" stroke="#fff6ea" stroke-width="1.6"><path d="M28 50s16-15 16-28a16 16 0 0 0-32 0c0 13 16 28 16 28z"/><circle cx="28" cy="22" r="5"/></svg>
+      <div class="k">Places</div><h3>Where it happened</h3>
+      <p>The village green, the high street, the mill town, the seaside pier. Name the places that made your family who it is.</p>
+    </article>
+    <article class="tile">
+      <span class="corner">v.</span>
+      <svg class="ic" viewBox="0 0 56 56" fill="none" stroke="#2e3640" stroke-width="1.6"><circle cx="28" cy="12" r="5"/><circle cx="12" cy="40" r="5"/><circle cx="44" cy="40" r="5"/><path d="M28 17v8M28 25L12 35M28 25l16 10"/><circle cx="28" cy="48" r="3" fill="#a8402f" stroke="none"/></svg>
+      <div class="k">Family stories</div><h3>Keep the tales</h3>
+      <p>How they met, where they worked, the war years, the move, the funny bits. Stories vanish quietly unless someone keeps them.</p>
+    </article>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <svg viewBox="0 0 180 180" fill="none" aria-hidden="true">
+      <circle cx="90" cy="90" r="86" stroke="#c8933f" stroke-width="1"/>
+      <circle cx="90" cy="90" r="72" stroke="#f1e9d8" stroke-width="1" opacity=".3"/>
+      <path d="M90 34c-16 0-26 14-22 28-12 2-18 14-14 26 4 10 14 14 24 12v34h24v-34c10 2 20-2 24-12 4-12-2-24-14-26 4-14-6-28-22-28z" fill="#3f5e47"/>
+      <rect x="86" y="96" width="8" height="40" fill="#c8933f"/>
+      <path d="M60 140h60" stroke="#c8933f"/>
+    </svg>
+    <div>
+      <h2>Like an oak, a family grows <i>from its roots up.</i></h2>
+      <p>The stories you keep today become the shade someone else sits in tomorrow.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ways" id="ways">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">Start this week</div>
+      <h2>Five ways to honour your heritage.</h2>
+      <p>Small, doable, and the kind of thing you’ll be glad you did.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Record a grandparent’s story</h3><p>Ten minutes on your phone. Ask about their childhood, first job, and the best day they remember.</p></div>
+      <div class="step"><div class="n">2</div><h3>Cook the family recipe</h3><p>Make the dish everyone asks for. Write it down properly and note who it came from.</p></div>
+      <div class="step"><div class="n">3</div><h3>Learn a phrase</h3><p>A dialect word, an old saying, a line from a folk song or a toast. Pass it to a child.</p></div>
+      <div class="step"><div class="n">4</div><h3>Visit &amp; trace</h3><p>Walk the streets your family lived on, explore parish and public records, or sketch a family tree together.</p></div>
+      <div class="step"><div class="n">5</div><h3>Share it</h3><p>Post a photo, recipe or story with <code>#HonorYourHeritage</code> and invite others to join in.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="prompts" id="prompts">
+  <div class="wrap">
+    <div><div class="kicker">Over a cup of tea</div><h2>Questions to ask before it’s too late.</h2></div>
+    <ul>
+      <li>What was your street like when you were young?</li>
+      <li>Who taught you to cook, and what did they make?</li>
+      <li>What did you do on Saturdays?</li>
+      <li>What’s a saying our family always used?</li>
+      <li>What do you hope we never forget?</li>
+    </ul>
+  </div>
+</section>
+
+<section class="cta" id="share">
+  <div class="wrap">
+    <div class="kicker">Your turn</div>
+    <h2>Ask one question. <i>Keep one story.</i></h2>
+    <p>Ring someone you love this week, ask where your family comes from, and share what you learn with #HonorYourHeritage. That’s how a story keeps going.</p>
+    <div class="btns">
+      <a class="btn p" href="https://x.com/intent/post?text=Honour%20where%20you%20come%20from.%20%23HonorYourHeritage">Share on X</a>
+      <a class="btn s" href="#ways">See the five ways</a>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><div class="credit"><i>Keep the story going.</i><span>#HonorYourHeritage · Made with love for every English family</span></div><div class="credit"><span class="by">Created by</span><span class="sig">TLMay</span><small>© 2026 TLMay</small></div></div></footer>
+</body>
+</html>
