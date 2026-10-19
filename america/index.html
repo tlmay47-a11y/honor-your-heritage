@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Honor where you came from · Honor Your American Heritage</title>
-<meta name="description" content="A love letter to the many roots of American families: the voices, tables, music, places and family stories that carry them. #HonorYourHeritage">
+<title>Proud of where we came from · Honor Your American Heritage</title>
+<meta name="description" content="From 1776 to today: the Revolution, the Declaration of Independence, the Constitution and the Bill of Rights, and the free nation Americans built together. #HonorYourHeritage">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
@@ -94,6 +94,24 @@ nav a{text-decoration:none;opacity:.85}
 .wave{animation:wave 7s ease-in-out infinite alternate}
 .wave.w2{animation-duration:9s;animation-delay:-3s}.wave.w3{animation-duration:11s;animation-delay:-5s}
 @keyframes wave{from{transform:translateX(0)}to{transform:translateX(-360px)}}
+
+/* patriotic scene */
+.fw{transform-box:fill-box;transform-origin:center;animation:burst 4.2s ease-out infinite;opacity:0}
+.fw.b2{animation-delay:-1.4s}.fw.b3{animation-delay:-2.8s}.fw.b4{animation-delay:-.7s;animation-duration:5s}
+@keyframes burst{0%{opacity:0;transform:scale(.1)}8%{opacity:1}55%{opacity:.85;transform:scale(1)}100%{opacity:0;transform:scale(1.15) translateY(14px)}}
+.trail{stroke-dasharray:120;animation:trail 4.2s ease-out infinite;opacity:0}
+.trail.b2{animation-delay:-1.4s}.trail.b3{animation-delay:-2.8s}.trail.b4{animation-delay:-.7s;animation-duration:5s}
+@keyframes trail{0%{stroke-dashoffset:120;opacity:.9}10%{stroke-dashoffset:0;opacity:.6}20%,100%{opacity:0}}
+.flagwave{animation:flagw 2.6s ease-in-out infinite;transform-box:fill-box;transform-origin:left center}
+@keyframes flagw{0%,100%{transform:skewY(0) scaleX(1)}50%{transform:skewY(-3deg) scaleX(.97)}}
+.bell{transform-box:fill-box;transform-origin:50% 0;animation:ring 4s ease-in-out infinite}
+@keyframes ring{0%,60%,100%{transform:rotate(0)}70%{transform:rotate(7deg)}80%{transform:rotate(-6deg)}90%{transform:rotate(3deg)}}
+.eagle{animation:soar 34s linear infinite}
+@keyframes soar{from{transform:translate(-260px,40px)}50%{transform:translate(700px,-30px)}to{transform:translate(1700px,20px)}}
+.quill{transform-box:fill-box;transform-origin:100% 100%;animation:write 3s ease-in-out infinite}
+@keyframes write{0%,100%{transform:rotate(0)}50%{transform:rotate(-5deg) translateX(-6px)}}
+.ink{stroke-dasharray:400;stroke-dashoffset:400;animation:ink 6s ease-in-out infinite}
+@keyframes ink{0%{stroke-dashoffset:400}60%,100%{stroke-dashoffset:0}}
 
 /* INTRO */
 .intro{padding:130px 0 90px;text-align:center}
@@ -202,6 +220,7 @@ footer i{font-family:var(--serif);font-size:17px;color:var(--bleu)}
   .hero .rise{opacity:1;transform:none}
   .js .reveal{opacity:1;transform:none}
   .glow,.stars{opacity:1}
+  .fw{opacity:1}.ink{stroke-dashoffset:0}
 }
 .sig{font-family:'Pinyon Script',cursive;font-size:30px;line-height:1;letter-spacing:0}
 .credit{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
@@ -213,13 +232,13 @@ footer i{font-family:var(--serif);font-size:17px;color:var(--bleu)}
 .wm span{font-family:var(--sans);font-size:10px;letter-spacing:.28em;text-transform:uppercase;opacity:.8}
 .hero .wm{bottom:58px}
 </style>
-<meta property="og:title" content="Honor where you came from. by TLMay"><meta property="og:description" content="Celebrate the many roots of your American family. #HonorYourHeritage"><meta property="og:image" content="https://tlmay47-a11y.github.io/honor-your-heritage/america/x-post.png"><meta property="og:url" content="https://tlmay47-a11y.github.io/honor-your-heritage/america/"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Honor where you came from. by TLMay"><meta name="twitter:description" content="Celebrate the many roots of your American family. #HonorYourHeritage"><meta name="twitter:image" content="https://tlmay47-a11y.github.io/honor-your-heritage/america/x-post.png">
+<meta property="og:title" content="Proud of where we came from. 1776 · We the People · by TLMay"><meta property="og:description" content="Liberty, the Declaration, the Constitution and the spirit that built America. Honor the story we share. #HonorYourHeritage"><meta property="og:image" content="https://tlmay47-a11y.github.io/honor-your-heritage/america/x-post.png"><meta property="og:url" content="https://tlmay47-a11y.github.io/honor-your-heritage/america/"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Proud of where we came from. 1776 · We the People · by TLMay"><meta name="twitter:description" content="Liberty, the Declaration, the Constitution and the spirit that built America. Honor the story we share. #HonorYourHeritage"><meta name="twitter:image" content="https://tlmay47-a11y.github.io/honor-your-heritage/america/x-post.png">
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
 <nav><div class="wrap">
-  <div class="mark">Roots<span>.</span></div>
+  <div class="mark">1776<span>.</span></div>
   <ul><li><a href="#heritage">Heritage</a></li><li><a href="#ways">Honor</a></li><li><a href="#prompts">Ask</a></li><li><a href="#share">Share</a></li></ul>
 </div></nav>
 
@@ -228,108 +247,109 @@ footer i{font-family:var(--serif);font-size:17px;color:var(--bleu)}
     <svg viewBox="0 0 1440 880" preserveAspectRatio="xMidYMax slice">
       <defs>
         <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#0d1730"/><stop offset=".45" stop-color="#1e2d52"/><stop offset=".72" stop-color="#7a4a52"/><stop offset=".9" stop-color="#e09a68"/><stop offset="1" stop-color="#f3c98c"/>
+          <stop offset="0" stop-color="#0b1430"/><stop offset=".5" stop-color="#1e2d52"/><stop offset=".78" stop-color="#5a3d55"/><stop offset=".92" stop-color="#c9785a"/><stop offset="1" stop-color="#e9a86e"/>
         </linearGradient>
-        <radialGradient id="sunglow" cx="1040" cy="470" r="420" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#ffd9a0" stop-opacity=".85"/><stop offset=".35" stop-color="#f0a46a" stop-opacity=".35"/><stop offset="1" stop-color="#f0a46a" stop-opacity="0"/>
+        <radialGradient id="sunglow" cx="1010" cy="560" r="460" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#ffd9a0" stop-opacity=".7"/><stop offset=".4" stop-color="#f0a46a" stop-opacity=".25"/><stop offset="1" stop-color="#f0a46a" stop-opacity="0"/>
         </radialGradient>
-        <linearGradient id="sunfill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff0cf"/><stop offset="1" stop-color="#f2b46a"/></linearGradient>
-        <linearGradient id="river" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3c98c" stop-opacity=".9"/><stop offset="1" stop-color="#3a4c78"/></linearGradient>
-        <linearGradient id="far" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6b5470"/><stop offset="1" stop-color="#3f3a5c"/></linearGradient>
-        <linearGradient id="mid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34385c"/><stop offset="1" stop-color="#232a4a"/></linearGradient>
-        <linearGradient id="plain" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a5a3c"/><stop offset="1" stop-color="#4a3a3a"/></linearGradient>
+        <linearGradient id="brick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6e3a34"/><stop offset="1" stop-color="#3d2430"/></linearGradient>
+        <linearGradient id="bronze" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5b4128"/><stop offset=".45" stop-color="#b98a4e"/><stop offset="1" stop-color="#4a3420"/></linearGradient>
         <linearGradient id="near" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b2443"/><stop offset="1" stop-color="#0f172e"/></linearGradient>
       </defs>
       <rect width="1440" height="880" fill="url(#sky)"/>
-      <!-- stars -->
       <g class="stars" fill="#f3ead7">
-        <circle class="star" cx="620" cy="60" r="1.6"/><circle class="star" cx="700" cy="120" r="1.1"/><circle class="star" cx="780" cy="44" r="1.8"/><circle class="star" cx="860" cy="150" r="1.2"/><circle class="star" cx="940" cy="80" r="1.5"/><circle class="star" cx="1010" cy="30" r="1"/><circle class="star" cx="1090" cy="110" r="1.7"/><circle class="star" cx="1170" cy="56" r="1.2"/><circle class="star" cx="1240" cy="140" r="1.4"/><circle class="star" cx="1320" cy="70" r="1.8"/><circle class="star" cx="1390" cy="130" r="1.1"/><circle class="star" cx="560" cy="170" r="1.2"/><circle class="star" cx="1200" cy="200" r="1"/><circle class="star" cx="980" cy="190" r="1.1"/><circle class="star" cx="1360" cy="220" r="1.3"/><circle class="star" cx="420" cy="90" r="1.3"/><circle class="star" cx="300" cy="40" r="1"/><circle class="star" cx="160" cy="120" r="1.4"/><circle class="star" cx="60" cy="60" r="1.1"/><circle class="star" cx="480" cy="230" r="1"/>
-        <path class="star" d="M1290 180l3 8 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1z" fill="#f3d9a4"/>
-        <path class="star" d="M830 90l2.4 6 6 .6-4.6 4 1.6 6-5.4-3.2-5.4 3.2 1.6-6-4.6-4 6-.6z" fill="#f3d9a4"/>
+        <circle class="star" cx="620" cy="60" r="1.6"/><circle class="star" cx="700" cy="140" r="1.1"/><circle class="star" cx="1010" cy="30" r="1"/><circle class="star" cx="1170" cy="56" r="1.2"/><circle class="star" cx="1390" cy="130" r="1.1"/><circle class="star" cx="560" cy="200" r="1.2"/><circle class="star" cx="1360" cy="240" r="1.3"/><circle class="star" cx="420" cy="90" r="1.3"/><circle class="star" cx="300" cy="40" r="1"/><circle class="star" cx="160" cy="120" r="1.4"/><circle class="star" cx="60" cy="60" r="1.1"/><circle class="star" cx="860" cy="260" r="1"/>
       </g>
-      <!-- sun -->
-      <g class="layer" data-depth="4">
-        <rect class="glow" width="1440" height="880" fill="url(#sunglow)"/>
-        <g class="sun">
-          <g class="rays" stroke="#ffe3b0" stroke-width="2" opacity=".35">
-            <path d="M1040 300V250M1040 640v50M870 470h-50M1210 470h50M920 350l-35-35M1160 590l35 35M1160 350l35-35M920 590l-35 35M975 310l-18-46M1105 630l18 46M1105 310l18-46M975 630l-18 46M880 405l-46-18M1200 535l46 18M1200 405l46-18M880 535l-46 18"/>
-          </g>
-          <circle cx="1040" cy="470" r="120" fill="url(#sunfill)"/>
+      <rect class="glow" width="1440" height="880" fill="url(#sunglow)"/>
+      <!-- fireworks -->
+      <g class="layer" data-depth="4" stroke-linecap="round">
+        <path class="trail" d="M760 600 L760 190" stroke="#f3d9a4" stroke-width="2"/>
+        <path class="trail b2" d="M1240 620 L1240 150" stroke="#f3d9a4" stroke-width="2"/>
+        <path class="trail b3" d="M1000 620 L1000 110" stroke="#f3d9a4" stroke-width="2"/>
+        <path class="trail b4" d="M560 620 L560 250" stroke="#f3d9a4" stroke-width="2"/>
+        <g class="fw" stroke="#e3584a" stroke-width="3"><path d="M760 130v-50M760 250v50M700 190h-50M820 190h50M718 148l-34-34M802 232l34 34M802 148l34-34M718 232l-34 34"/><circle cx="760" cy="190" r="4" fill="#ffe3b0" stroke="none"/></g>
+        <g class="fw b2" stroke="#f3ead7" stroke-width="3"><path d="M1240 100v-44M1240 200v44M1190 150h-44M1290 150h44M1205 115l-30-30M1275 185l30 30M1275 115l30-30M1205 185l-30 30"/><g fill="#f3ead7" stroke="none"><circle cx="1240" cy="52" r="3"/><circle cx="1240" cy="248" r="3"/><circle cx="1142" cy="150" r="3"/><circle cx="1338" cy="150" r="3"/></g></g>
+        <g class="fw b3" stroke="#7fa3e0" stroke-width="3"><path d="M1000 60v-40M1000 160v40M955 110h-40M1045 110h40M968 78l-28-28M1032 142l28 28M1032 78l28-28M968 142l-28 28"/></g>
+        <g class="fw b4" stroke="#d9a24a" stroke-width="2.5"><path d="M560 210v-34M560 290v34M520 250h-34M600 250h34M532 222l-24-24M588 278l24 24M588 222l24-24M532 278l-24 24"/></g>
+      </g>
+      <!-- eagle -->
+      <g class="eagle"><g transform="translate(180 250)" fill="#141c38">
+        <path class="wing" d="M0 0 q-40 -30 -86 -22 q36 4 52 22 q-40 -6 -64 8 q40 0 58 10z"/>
+        <path class="wing" d="M24 0 q40 -30 86 -22 q-36 4 -52 22 q40 -6 64 8 q-40 0 -58 10z"/>
+        <ellipse cx="12" cy="8" rx="16" ry="9"/><circle cx="30" cy="0" r="6" fill="#f3ead7"/><path d="M35 -1 l8 3 -7 2z" fill="#d9a24a"/><path d="M-4 10 l-14 8 18 -2z"/>
+      </g></g>
+      <!-- Independence Hall -->
+      <g class="layer" data-depth="10">
+        <path d="M-60 640 Q300 600 720 615 T1500 605 V760 H-60z" fill="#2a2f52"/>
+        <g fill="url(#brick)">
+          <rect x="840" y="520" width="340" height="110"/>
+          <rect x="740" y="550" width="110" height="80"/><rect x="1170" y="550" width="110" height="80"/>
+          <rect x="970" y="420" width="80" height="110"/>
         </g>
-      </g>
-      <!-- clouds -->
-      <g fill="#f3ead7" opacity=".22">
-        <path class="cloud" d="M100 230q20-30 60-20 20-30 60-10 40-5 50 30z"/>
-        <path class="cloud c2" d="M0 320q24-32 70-22 26-34 74-10 46-4 56 32z" opacity=".7"/>
-        <path class="cloud c3" d="M300 170q16-24 48-16 16-24 48-8 32-4 40 24z" opacity=".8"/>
-      </g>
-      <!-- birds -->
-      <g fill="none" stroke="#1a2240" stroke-width="2.4" stroke-linecap="round">
-        <g class="flock"><path class="wing" d="M200 260q10-10 20 0q10-10 20 0"/><path class="wing" d="M240 240q8-8 16 0q8-8 16 0"/><path class="wing" d="M170 236q7-7 14 0q7-7 14 0"/></g>
-        <g class="flock f2"><path class="wing" d="M100 330q9-9 18 0q9-9 18 0"/><path class="wing" d="M136 316q7-7 14 0q7-7 14 0"/></g>
-      </g>
-      <!-- far mountains -->
-      <g class="layer" data-depth="8">
-        <path d="M-60 600 L80 470 L170 540 L300 400 L420 520 L520 450 L640 560 L760 440 L860 520 L960 470 L1080 560 L1200 430 L1320 520 L1500 420 V700 H-60z" fill="url(#far)" opacity=".9"/>
-        <path d="M300 400 L330 430 L312 428 L300 444 L286 428 L272 432z M760 440 L786 466 L770 462 L758 476 L746 462 L734 466z M1200 430 L1226 456 L1210 452 L1198 468 L1186 454 L1174 458z" fill="#f3ead7" opacity=".55"/>
-      </g>
-      <!-- mid hills / mesas -->
-      <g class="layer" data-depth="14">
-        <path d="M-60 650 Q120 560 300 610 L360 580 H460 L490 610 Q620 560 760 620 Q900 580 1000 600 L1040 570 H1140 L1170 600 Q1320 560 1500 620 V760 H-60z" fill="url(#mid)"/>
-        <g fill="#1d2546">
-          <path d="M120 612 l10-40 10 40z M150 606 l9-34 9 34z M1290 608 l10-40 10 40z M1320 612 l8-30 8 30z"/>
+        <g fill="#e8dcc4">
+          <rect x="962" y="412" width="96" height="10"/><rect x="976" y="360" width="68" height="54"/><rect x="972" y="352" width="76" height="8"/>
+          <rect x="984" y="300" width="52" height="54"/><circle cx="1010" cy="384" r="12" fill="#2a2f52"/><path d="M1010 384 v-8 M1010 384 h6" stroke="#e8dcc4" stroke-width="2"/>
+          <path d="M980 300 l30 -28 30 28z"/>
         </g>
-      </g>
-      <!-- plains & river -->
-      <g class="layer" data-depth="22">
-        <path d="M-60 690 Q300 640 720 660 T1500 650 V880 H-60z" fill="url(#plain)"/>
-        <g stroke="#c9905a" stroke-width="1.2" opacity=".35"><path d="M0 720 Q400 690 800 705 T1440 700"/><path d="M0 745 Q400 715 800 730 T1440 725"/></g>
-        <path d="M880 660 Q820 690 900 712 Q1010 740 860 780 Q700 820 760 880 H980 Q900 820 1040 790 Q1180 750 1030 714 Q950 694 1000 660z" fill="url(#river)"/>
-        <g stroke="#fff3da" stroke-width="2" stroke-linecap="round">
-          <path class="water" d="M900 690h40"/><path class="water" d="M960 735h50"/><path class="water" d="M880 790h60"/><path class="water" d="M840 840h70"/><path class="water" d="M1000 760h30"/>
-        </g>
-      </g>
-      <!-- town -->
-      <g class="layer" data-depth="28">
-        <g fill="#141c38">
-          <path d="M180 712 h40 v-34 l20-18 20 18 v34 h20 v-50 h36 v50 h16 v-28 l18-14 18 14 v28 h26 V712z"/>
-          <path d="M230 660 v-38 h6 v-20 l6-12 6 12 v20 h6 v38z"/>
-          <rect x="420" y="676" width="16" height="36"/><path d="M412 676 h32 l-16-12z"/>
-          <path d="M470 712 v-46 l14-6 14 6 v46z"/><ellipse cx="484" cy="660" rx="18" ry="6"/><path d="M484 654v-14" stroke="#141c38" stroke-width="3"/>
-        </g>
+        <path d="M1010 272 V220" stroke="#e8dcc4" stroke-width="3"/>
+        <path d="M836 520 h348 l-8 -8 h-332z" fill="#e8dcc4"/>
         <g fill="#f6c97a">
-          <rect class="win" x="196" y="692" width="6" height="8"/><rect class="win" x="250" y="690" width="6" height="8"/><rect class="win" x="300" y="680" width="6" height="8"/><rect class="win" x="316" y="696" width="6" height="8"/><rect class="win" x="358" y="694" width="6" height="8"/><rect class="win" x="425" y="690" width="6" height="8"/><rect class="win" x="480" y="684" width="5" height="8"/><rect class="win" x="239" y="636" width="5" height="7"/>
+          <rect class="win" x="862" y="540" width="14" height="22"/><rect class="win" x="902" y="540" width="14" height="22"/><rect class="win" x="942" y="540" width="14" height="22"/><rect class="win" x="1064" y="540" width="14" height="22"/><rect class="win" x="1104" y="540" width="14" height="22"/><rect class="win" x="1144" y="540" width="14" height="22"/>
+          <rect class="win" x="862" y="584" width="14" height="22"/><rect class="win" x="942" y="584" width="14" height="22"/><rect class="win" x="1064" y="584" width="14" height="22"/><rect class="win" x="1144" y="584" width="14" height="22"/>
+          <rect class="win" x="996" y="440" width="28" height="36" rx="14"/><rect x="996" y="586" width="28" height="44" rx="4"/>
+          <rect class="win" x="768" y="572" width="12" height="20"/><rect class="win" x="808" y="572" width="12" height="20"/><rect class="win" x="1198" y="572" width="12" height="20"/><rect class="win" x="1240" y="572" width="12" height="20"/>
         </g>
-        <g fill="#f3ead7"><ellipse class="smoke" cx="340" cy="650" rx="7" ry="6"/><ellipse class="smoke" cx="340" cy="650" rx="7" ry="6" style="animation-delay:-3s"/></g>
-        <!-- flag on town hall -->
-        <path d="M239 590 v-26" stroke="#141c38" stroke-width="2"/>
-        <path class="flag" d="M240 564 q8 -4 16 0 t16 0 v12 q-8 -4 -16 0 t-16 0z" fill="#a33b2c"/>
       </g>
-      <!-- near foreground + road -->
-      <g class="layer" data-depth="40">
-        <path d="M-60 770 Q300 720 600 760 Q900 800 1500 740 V880 H-60z" fill="url(#near)"/>
-        <path d="M560 880 Q640 820 700 790 Q760 762 820 752 L840 752 Q790 770 760 800 Q720 840 760 880z" fill="#3a3448"/>
-        <path class="road-dash" d="M660 880 Q700 830 760 790 Q800 765 830 754" stroke="#f3d9a4" stroke-width="3" fill="none" opacity=".75"/>
-        <!-- fence -->
-        <g stroke="#2b3456" stroke-width="3"><path d="M60 800v-26M120 794v-26M180 790v-26M240 788v-26M300 788v-26"/><path d="M50 782 Q180 768 310 772M50 794 Q180 780 310 784" stroke-width="2"/></g>
-        <!-- grasses -->
-        <g stroke="#3a4670" stroke-width="2" stroke-linecap="round" fill="none">
-          <path class="grass" d="M1100 800 q4-30 -6-50M1110 800 q2-26 10-44M1120 800 q-2-22 -12-36"/>
-          <path class="grass" style="animation-delay:-1.5s" d="M1260 790 q4-30 -6-50M1270 790 q2-26 10-44M1280 790 q-2-22 -12-36"/>
-          <path class="grass" style="animation-delay:-3s" d="M420 812 q4-30 -6-50M430 812 q2-26 10-44M440 812 q-2-22 -12-36"/>
+      <!-- 13-star flag on tall pole -->
+      <g class="layer" data-depth="18">
+        <path d="M690 640 V250" stroke="#d9c7a0" stroke-width="5"/><circle cx="690" cy="246" r="7" fill="#d9a24a"/>
+        <g class="flagwave">
+          <g transform="translate(693 258) scale(.75)">
+            <rect width="300" height="182" fill="#b22234"/>
+            <g fill="#f3ead7"><rect y="14" width="300" height="14"/><rect y="42" width="300" height="14"/><rect y="70" width="300" height="14"/><rect y="98" width="300" height="14"/><rect y="126" width="300" height="14"/><rect y="154" width="300" height="14"/></g>
+            <rect width="124" height="98" fill="#2a3a78"/>
+            <g fill="#f3ead7" transform="translate(62 49)">
+              <circle r="2.6" cx="0" cy="-34"/><circle r="2.6" cx="16.3" cy="-29.8"/><circle r="2.6" cx="28.2" cy="-18.2"/><circle r="2.6" cx="33.2" cy="-2.6"/><circle r="2.6" cx="30.6" cy="13.8"/><circle r="2.6" cx="21.3" cy="26.5"/><circle r="2.6" cx="7.2" cy="33.2"/><circle r="2.6" cx="-7.2" cy="33.2"/><circle r="2.6" cx="-21.3" cy="26.5"/><circle r="2.6" cx="-30.6" cy="13.8"/><circle r="2.6" cx="-33.2" cy="-2.6"/><circle r="2.6" cx="-28.2" cy="-18.2"/><circle r="2.6" cx="-16.3" cy="-29.8"/>
+            </g>
+            <rect width="300" height="182" fill="url(#sky)" opacity=".12"/>
+          </g>
         </g>
-        <!-- tree -->
-        <path d="M1380 780 v-60" stroke="#141c38" stroke-width="8"/>
-        <circle cx="1380" cy="700" r="46" fill="#141c38"/><circle cx="1346" cy="726" r="30" fill="#141c38"/><circle cx="1414" cy="724" r="32" fill="#141c38"/>
+      </g>
+      <!-- Liberty Bell -->
+      <g class="layer" data-depth="26">
+        <path d="M560 790 V640 h220 V790" stroke="#3b2a22" stroke-width="10" fill="none"/>
+        <rect x="548" y="628" width="244" height="16" rx="3" fill="#4a3426"/>
+        <g class="bell">
+          <rect x="658" y="644" width="24" height="14" fill="#3a2a1c"/>
+          <path d="M670 656 c-34 0 -40 24 -42 54 c-2 30 -10 44 -26 54 h136 c-16 -10 -24 -24 -26 -54 c-2 -30 -8 -54 -42 -54z" fill="url(#bronze)"/>
+          <rect x="598" y="760" width="144" height="10" rx="4" fill="#6a4c2e"/>
+          <path d="M676 700 l-4 12 5 10 -3 14 4 10" stroke="#2a1d12" stroke-width="2" fill="none"/>
+          <path d="M640 690 h60" stroke="#d9b07a" stroke-width="1.5" opacity=".6"/>
+          <circle cx="670" cy="776" r="7" fill="#3a2a1c"/>
+        </g>
+      </g>
+      <!-- foreground with quill and parchment -->
+      <g class="layer" data-depth="40">
+        <path d="M-60 780 Q300 740 600 770 Q900 800 1500 750 V880 H-60z" fill="url(#near)"/>
+        <g transform="translate(830 772) rotate(-4)">
+          <path d="M0 0 h170 q10 0 10 10 v70 h-180z" fill="#efe2c2"/><path d="M-10 80 h200 q-10 14 -24 14 h-170 q-14 0 -6 -14z" fill="#d9c49a"/>
+          <text x="16" y="28" font-family="Pinyon Script,cursive" font-size="22" fill="#3b2a22">We the People</text>
+          <path class="ink" d="M16 44 q20 -6 40 0 t40 0 t40 0 M16 58 q20 -6 40 0 t40 0 t30 0" stroke="#3b2a22" stroke-width="1.6" fill="none"/>
+        </g>
+        <g transform="translate(-350 12)"><g class="quill"><path d="M1380 700 q-50 30 -86 110 l4 2 q46 -70 90 -100 q-2 -8 -8 -12z" fill="#f3ead7"/><path d="M1294 810 l-6 12" stroke="#3b2a22" stroke-width="2"/></g></g>
+        <g stroke="#3a4670" stroke-width="2" stroke-linecap="round" fill="none">
+          <path class="grass" d="M120 812 q4-30 -6-50M130 812 q2-26 10-44M140 812 q-2-22 -12-36"/>
+          <path class="grass" style="animation-delay:-2s" d="M1120 800 q4-30 -6-50M1130 800 q2-26 10-44M1140 800 q-2-22 -12-36"/>
+        </g>
       </g>
     </svg>
   </div>
   <div class="veil"></div>
   <div class="hero-copy"><div class="wrap"><div class="inner">
-    <div class="eyebrow rise">For every American family</div>
-    <h1 class="rise">Honor where<br>you <em>came from.</em></h1>
-    <div class="sub rise">Many roots. One family table.</div>
-    <p class="lede rise">Some families have lived on this land for thousands of years. Some arrived by ship, by plane, on foot. Some were brought here against their will and built a future anyway. Every story is part of the American story. Keep yours alive. Pass it on.</p>
+    <div class="eyebrow rise">Since 1776 · For every American</div>
+    <h1 class="rise">Proud of where<br>we <em>came from.</em></h1>
+    <div class="sub rise">Life, Liberty and the pursuit of Happiness.</div>
+    <p class="lede rise">A handful of colonies stood up to an empire, declared their independence, and wrote down a new idea: that a free people could govern themselves. Generations since have defended it, widened it and built on it. That story belongs to all of us. Keep it alive. Pass it on.</p>
     <div class="tag rise">Share yours <b>#HonorYourHeritage</b></div>
   </div></div></div>
   <div class="wm" aria-hidden="true"><span>Design</span><b class="sig" style="font-weight:400">TLMay</b></div>
@@ -345,8 +365,8 @@ footer i{font-family:var(--serif);font-size:17px;color:var(--bleu)}
 <section class="intro" id="heritage">
   <div class="wrap reveal">
     <div class="eyebrow">Our heritage</div>
-    <h2>A country of <em>many beginnings</em>, carried home in every family.</h2>
-    <p>Whether your people are Cherokee or Lakota, came through Ellis Island or a Texas border town, survived the Middle Passage, crossed the Pacific, or arrived last year with two suitcases, your heritage is something you belong to and help write. Where you came from is worth remembering.</p>
+    <h2>A nation founded on <em>an idea</em>, and built by the people who believed in it.</h2>
+    <p>On July 4, 1776, the Continental Congress adopted the Declaration of Independence. Eleven years later, in the same Philadelphia hall, delegates signed a Constitution that began with three words: “We the People.” From farmers at Lexington and Concord to the pioneers, inventors and builders who followed, Americans have been writing this story ever since.</p>
     <svg class="fleuron" viewBox="0 0 110 20" aria-hidden="true"><path d="M0 10h38M72 10h38" stroke="#d9a24a"/><path d="M55 2l2.4 5.6 6 .6-4.6 4 1.4 6-5.2-3.2-5.2 3.2 1.4-6-4.6-4 6-.6z" fill="#a33b2c"/><circle cx="44" cy="10" r="2" fill="#111d36"/><circle cx="66" cy="10" r="2" fill="#111d36"/></svg>
   </div>
 </section>
@@ -355,38 +375,38 @@ footer i{font-family:var(--serif);font-size:17px;color:var(--bleu)}
   <div class="wrap grid">
     <article class="card wide reveal">
       <div class="num">I.</div>
-      <svg viewBox="0 0 72 72" fill="none" stroke="#d9a24a" stroke-width="1.6"><path d="M10 18h36a6 6 0 0 1 6 6v16a6 6 0 0 1-6 6H26l-10 9v-9h-6z"/><path d="M52 28h10v20h-6v8l-9-8H40"/><path class="spin" d="M20 28h22M20 35h16"/></svg>
-      <h3>Voices</h3>
-      <div class="alt">Language &amp; the way we speak</div>
-      <p>The languages your family has spoken here: Navajo and Ojibwe, Spanish and Tagalog, Yiddish and Gullah, Vietnamese, Arabic, Polish, Haitian Creole, and the English of your grandmother’s porch. The accents, the nicknames, the sayings only your family understands. Every word you keep is a thread back to someone who spoke it first.</p>
+      <svg viewBox="0 0 72 72" fill="none" stroke="#d9a24a" stroke-width="1.6"><path d="M36 8v8"/><path d="M36 16c-12 0-14 10-15 22-1 10-4 16-9 19h48c-5-3-8-9-9-19-1-12-3-22-15-22z"/><path d="M10 57h52"/><path class="spin" d="M37 30l-2 8 3 6-2 8"/><circle cx="36" cy="62" r="3"/></svg>
+      <h3>The Revolution</h3>
+      <div class="alt">1775–1783 · The fight for independence</div>
+      <p>It began with the “shot heard round the world” at Lexington and Concord in April 1775. Ordinary farmers, shopkeepers and craftsmen held on through the hard winter at Valley Forge and won at Saratoga and Yorktown. In 1783 the Treaty of Paris made it official: the United States was free and independent.</p>
     </article>
     <article class="card reveal">
       <div class="num">II.</div>
-      <svg viewBox="0 0 72 72" fill="none" stroke="#a33b2c" stroke-width="1.6"><path d="M12 38h48a24 22 0 0 1-48 0z"/><path d="M8 38h56"/><path class="spin" d="M26 28c0-6 6-6 6-12M36 28c0-6 6-6 6-12M46 28c0-6 6-6 6-12"/></svg>
-      <h3>The Table</h3>
-      <div class="alt">Food</div>
-      <p>Frybread and gumbo, tamales at Christmas, pierogi, collard greens, pho, jollof, a holiday pie with a secret. The dish your family insists only they make right is a history lesson you can taste.</p>
+      <svg viewBox="0 0 72 72" fill="none" stroke="#a33b2c" stroke-width="1.6"><path d="M16 10h34l6 6v46H16z"/><path d="M24 24h24M24 32h24M24 40h18"/><path class="spin" d="M62 6L36 50l-2 8 6-6L66 10z"/></svg>
+      <h3>The Declaration</h3>
+      <div class="alt">July 4, 1776</div>
+      <p>Thomas Jefferson’s words, adopted by the Continental Congress, told the world why a people may govern themselves: “that all men are created equal” and are endowed with rights including “Life, Liberty and the pursuit of Happiness.”</p>
     </article>
     <article class="card sage reveal">
       <div class="num">III.</div>
-      <svg viewBox="0 0 72 72" fill="none" stroke="#111d36" stroke-width="1.6"><circle cx="24" cy="50" r="8"/><circle cx="52" cy="44" r="8"/><path d="M32 50V16l28-6v34"/><path class="spin" d="M32 24l28-6"/></svg>
-      <h3>Art &amp; Music</h3>
-      <div class="alt">What our hands and voices make</div>
-      <p>Spirituals, blues and jazz, powwow drums, bluegrass fiddles, mariachi, quilts, beadwork, murals. Art isn’t only in museums; it lives in the hands that taught you to stitch, carve, sing or play.</p>
+      <svg viewBox="0 0 72 72" fill="none" stroke="#111d36" stroke-width="1.6"><path d="M12 14h48v44H12z"/><path d="M12 22h48"/><path d="M20 32h32M20 40h32M20 48h20"/><path class="spin" d="M48 52l6-6 4 4-6 6z"/></svg>
+      <h3>The Constitution</h3>
+      <div class="alt">Signed September 17, 1787</div>
+      <p>“We the People of the United States, in Order to form a more perfect Union…” A charter for self-government with checks and balances, still the foundation of the nation more than two centuries later.</p>
     </article>
     <article class="card brick reveal">
       <div class="num">IV.</div>
-      <svg viewBox="0 0 72 72" fill="none" stroke="#fde2d4" stroke-width="1.6"><path d="M36 64s20-20 20-36a20 20 0 0 0-40 0c0 16 20 36 20 36z"/><circle class="spin" cx="36" cy="28" r="7"/></svg>
-      <h3>Places</h3>
-      <div class="alt">Where we’re from</div>
-      <p>Ancestral homelands, a farm in the Delta, a block in the Bronx, a reservation, a mill town, a port city where someone first stepped ashore. The places that shaped your family deserve to be named.</p>
+      <svg viewBox="0 0 72 72" fill="none" stroke="#fde2d4" stroke-width="1.6"><path d="M36 8l24 10v16c0 16-11 26-24 30C23 60 12 50 12 34V18z"/><path class="spin" d="M36 22l3 8 8 .5-6 5 2 8-7-4.5-7 4.5 2-8-6-5 8-.5z"/></svg>
+      <h3>The Bill of Rights</h3>
+      <div class="alt">Ratified December 15, 1791</div>
+      <p>Ten amendments that protect freedom of religion, speech, the press and assembly, along with the right to a fair trial. Freedoms Americans still carry with them every day.</p>
     </article>
     <article class="card reveal">
       <div class="num">V.</div>
-      <svg viewBox="0 0 72 72" fill="none" stroke="#111d36" stroke-width="1.6"><circle cx="36" cy="14" r="6"/><circle cx="16" cy="48" r="6"/><circle cx="56" cy="48" r="6"/><path d="M36 20v10M36 30L16 42M36 30l20 12"/><circle class="spin" cx="36" cy="62" r="3" fill="#a33b2c" stroke="none"/></svg>
-      <h3>Family Stories</h3>
-      <div class="alt">The ones we tell</div>
-      <p>The journeys, the courage, the love stories, the hard years and the funny ones retold at every reunion. They live in memory, and memory needs keepers. That can be you.</p>
+      <svg viewBox="0 0 72 72" fill="none" stroke="#111d36" stroke-width="1.6"><path d="M8 60h56"/><path d="M14 60V36l14-10 14 10v24"/><path d="M42 60V22h16v38"/><path d="M24 60V46h8v14"/><path class="spin" d="M50 22V10l8 4-8 4"/></svg>
+      <h3>What We Built</h3>
+      <div class="alt">The builder’s spirit</div>
+      <p>Wagon trails and railroads, barns raised by neighbors, bridges, factories, inventions and a flag planted on the Moon. Generation after generation, Americans have turned freedom into homes, towns and dreams for their children.</p>
     </article>
   </div>
 </section>
@@ -397,8 +417,8 @@ footer i{font-family:var(--serif);font-size:17px;color:var(--bleu)}
     <g fill="none" stroke="#d9a24a" stroke-width="1" opacity=".18"><circle cx="720" cy="260" r="200"/><circle cx="720" cy="260" r="260"/><circle cx="720" cy="260" r="330"/></g>
   </svg>
   <div class="wrap reveal">
-    <blockquote>We are the dreams our ancestors<br><em>carried a long way.</em></blockquote>
-    <small>Many roots · One family table</small>
+    <blockquote>“Proclaim LIBERTY throughout all the Land<br><em>unto all the Inhabitants thereof.”</em></blockquote>
+    <small>Inscription on the Liberty Bell · Philadelphia</small>
   </div>
   <div class="ribbon" aria-hidden="true">
     <svg viewBox="0 0 1440 56" preserveAspectRatio="none">
@@ -413,14 +433,14 @@ footer i{font-family:var(--serif);font-size:17px;color:var(--bleu)}
   <div class="wrap">
     <header class="reveal">
       <div><div class="eyebrow">Five simple acts</div><h2>Five ways to honor your heritage.</h2></div>
-      <p>No grand gesture required. Pick one this week. Small acts, repeated, are how heritage survives.</p>
+      <p>No grand gesture required. Pick one this week. Small acts, repeated, are how a free people keeps its story alive.</p>
     </header>
     <ol class="list">
-      <li class="reveal"><div class="n">01</div><h3>Record their stories<span>Press record</span></h3><p>Sit with a grandparent or elder, press record on your phone, and ask: Where did our family come from? What did home look like? What do you want us to remember?</p></li>
-      <li class="reveal"><div class="n">02</div><h3>Cook the family recipe<span>Write it down</span></h3><p>Find the dish that tastes like home. Cook it with someone, write the recipe down properly, and note who taught it to whom.</p></li>
-      <li class="reveal"><div class="n">03</div><h3>Learn a word or a song<span>Keep the language</span></h3><p>A greeting in an ancestral language, a lullaby, a hymn, a toast. Teach it to a child. Use it at the table.</p></li>
-      <li class="reveal"><div class="n">04</div><h3>Visit &amp; trace<span>Follow the road back</span></h3><p>Visit a hometown, a homeland, a cemetery or a cultural center. Explore public archives and records, and build a simple family tree with the relatives who remember the most.</p></li>
-      <li class="reveal"><div class="n">05</div><h3>Share it<span>Pass it on</span></h3><p>Post a photo, a recipe or a story with <code>#HonorYourHeritage</code> and invite others to share theirs. Heritage grows when it’s shared.</p></li>
+      <li class="reveal"><div class="n">01</div><h3>Read the founding words<span>Go to the source</span></h3><p>Read the Declaration of Independence and the Constitution’s Preamble out loud with your family, maybe on the Fourth of July. They’re short, and they still stir the heart.</p></li>
+      <li class="reveal"><div class="n">02</div><h3>Fly the flag<span>Wear it proudly</span></h3><p>Raise the Stars and Stripes on a holiday, learn its history, and teach a child how to fold it and treat it with respect.</p></li>
+      <li class="reveal"><div class="n">03</div><h3>Visit where it happened<span>Walk the ground</span></h3><p>Independence Hall and the Liberty Bell, Lexington and Concord, Valley Forge, Yorktown, or the historic site and veterans’ memorial closest to home.</p></li>
+      <li class="reveal"><div class="n">04</div><h3>Thank those who served<span>Keep faith with them</span></h3><p>Ask a veteran or an older relative about their service and their America. Record the story, and find the patriots and builders in your own family tree.</p></li>
+      <li class="reveal"><div class="n">05</div><h3>Share it<span>Pass it on</span></h3><p>Post a photo, a family story or your favorite line from our founding documents with <code>#HonorYourHeritage</code> and invite others to share theirs. Liberty grows when it’s shared.</p></li>
     </ol>
   </div>
 </section>
@@ -428,13 +448,13 @@ footer i{font-family:var(--serif);font-size:17px;color:var(--bleu)}
 <section class="prompts" id="prompts">
   <svg class="compass" viewBox="0 0 200 200" aria-hidden="true" fill="none" stroke="#111d36"><circle cx="100" cy="100" r="96"/><circle cx="100" cy="100" r="70"/><path d="M100 4l12 96-12 96-12-96z" fill="#111d36"/><path d="M4 100l96-12 96 12-96 12z"/></svg>
   <div class="wrap">
-    <div class="reveal"><div class="eyebrow">On the porch, at the table</div><h2>Questions to ask <em>while you still can.</em></h2><p class="note">Ask slowly. Listen longer than feels natural. Write down the names, places and dates, and the feelings too.</p></div>
+    <div class="reveal"><div class="eyebrow">On the porch, at the table</div><h2>Questions to ask <em>this Fourth of July.</em></h2><p class="note">Ask the oldest person at the table. Listen longer than feels natural. Write down the names, places and dates, and the feelings too.</p></div>
     <ul class="reveal">
-      <li>Where did our family come from, as far back as you know?</li>
-      <li>Who in our family was the first to arrive here, or who was always here?</li>
-      <li>What did your grandparents teach you that you still use?</li>
-      <li>What did holidays smell and sound like when you were young?</li>
-      <li>What do you hope we never forget?</li>
+      <li>What does being an American mean to you?</li>
+      <li>Who in our family served our country, and what did they tell you?</li>
+      <li>What did our family build, grow or make with their own hands?</li>
+      <li>What did the Fourth of July look and sound like when you were young?</li>
+      <li>Which freedom are you most grateful for?</li>
     </ul>
   </div>
 </section>
@@ -443,16 +463,16 @@ footer i{font-family:var(--serif);font-size:17px;color:var(--bleu)}
   <div class="wrap reveal">
     <svg class="stars-deco" viewBox="0 0 160 24" aria-hidden="true" fill="#a33b2c"><path d="M30 2l3 7 8 .6-6 5 2 7.4-7-4-7 4 2-7.4-6-5 8-.6z"/><path d="M80 2l3 7 8 .6-6 5 2 7.4-7-4-7 4 2-7.4-6-5 8-.6z" fill="#d9a24a"/><path d="M130 2l3 7 8 .6-6 5 2 7.4-7-4-7 4 2-7.4-6-5 8-.6z" fill="#111d36"/></svg>
     <div class="eyebrow">Your turn</div>
-    <h2>Ask one question. <em>Keep one story.</em></h2>
-    <p>Call someone you love this week and ask them where your family comes from. Then share what you learned with #HonorYourHeritage, so the next generation can find it.</p>
+    <h2>We the People. <em>Keep the story going.</em></h2>
+    <p>Read the founding words, ask one question of someone who remembers, and share what you learned with #HonorYourHeritage, so the next generation knows where we came from.</p>
     <div class="btns">
-      <a class="btn p" href="https://x.com/intent/post?text=Honor%20where%20you%20came%20from.%20%F0%9F%87%BA%F0%9F%87%B8%20%23HonorYourHeritage&amp;url=https%3A%2F%2Ftlmay47-a11y.github.io%2Fhonor-your-heritage%2Famerica%2F">Share on X</a>
+      <a class="btn p" href="https://x.com/intent/post?text=Proud%20of%20where%20we%20came%20from.%20%F0%9F%87%BA%F0%9F%87%B8%20Life%2C%20Liberty%20and%20the%20pursuit%20of%20Happiness.%20%23HonorYourHeritage&amp;url=https%3A%2F%2Ftlmay47-a11y.github.io%2Fhonor-your-heritage%2Famerica%2F">Share on X</a>
       <a class="btn s" href="#ways">See the five ways</a>
     </div>
   </div>
 </section>
 
-<footer><div class="wrap"><div class="credit"><i>Honor where you came from.</i><span>#HonorYourHeritage · Made with love for every American family</span></div><div class="credit"><span class="by">Created by</span><span class="sig">TLMay</span><small>© 2026 TLMay</small></div></div></footer>
+<footer><div class="wrap"><div class="credit"><i>Proud of where we came from.</i><span>#HonorYourHeritage · Made with love for every American</span></div><div class="credit"><span class="by">Created by</span><span class="sig">TLMay</span><small>© 2026 TLMay</small></div></div></footer>
 
 <script>
 (function(){
